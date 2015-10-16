@@ -1,0 +1,11 @@
+@media only screen and (max-device-width: 768px){
+	.logo{ padding-left: 20px;}
+	.home_mockup_image{ top: -30px}
+	.mobile_nav_open_button{ padding-right: 20px; padding-top: 20px }
+	.cta_button_area img{ max-width: 100%; display: block; margin: 0 auto; width: 70%; position: relative; top: -60px}
+	#main_content h4{ position: relative; top: -30px}
+	.home_content h6{ display: none;}
+	.intro p{ padding: 0 30px; font-size: 16px; line-height: 1.6}
+
+
+}
