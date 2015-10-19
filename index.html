@@ -242,10 +242,11 @@
     <!-- popup on mobile -->
     <script type="text/javascript">
       $(document).ready(function () {
-        $('body').click(function () {
-          openModal();
-          return false;
-        });
+        setTimeout("openModal()", 5000);
+        // $('body').click(function () {
+        //   openModal();
+        //   return false;
+        // });
         
         $('.close-button').click(function () {
           closeModal();
