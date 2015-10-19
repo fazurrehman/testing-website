@@ -6,6 +6,75 @@
 	#main_content h4{ position: relative; top: -30px}
 	.home_content h6{ display: none;}
 	.intro p{ padding: 0 30px; font-size: 16px; line-height: 1.6}
+}
 
 
+/* popup css */
+.modal-container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.6);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 300ms ease-in-out;
+}
+
+.modal-container .modal{
+  position: absolute;
+  width: 300px;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  margin-left: -150px;
+  margin-top: -50px;
+  background: #111;
+  box-shadow: 0 10px 10px rgba(0,0,0,.5);
+  transform: translate(0px, 50px);
+  -webkit-transform: translate(0px, 50px);
+  transition: all 500ms cubic-bezier(0.25, 0.35, 0, 1.74);
+  -webkit-transition: all 500ms cubic-bezier(0.25, 0.35, 0, 1.74);
+}
+
+.modal-container .modal .close-button{
+  position: absolute;
+  left:100%;
+  bottom:100%;
+  margin-left:-20px;
+  margin-bottom:10px;
+  width:24px;
+  height:24px;
+  background-image:url('../images/close-btn.png');
+  cursor: pointer;
+  transition: all 100ms ease-in-out;
+}
+
+.modal-container .modal .close-button:hover{
+  transform: scale(1.1);
+  -webkit-transform: scale(1.2)
+}
+
+.modal-container .modal img{
+  display: block;
+  margin: 0 auto;
+  padding: 15px;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-iteration-count: 2;
+  animation-iteration-count: 2;
+}
+
+.modal-open .modal-container {
+  opacity: 1;
+  pointer-events: all; 
+}
+
+.modal-open .modal-container .modal {
+  margin-top: -150px; 
 }

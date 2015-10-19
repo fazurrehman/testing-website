@@ -202,27 +202,66 @@
         </div>        
       </div>
     </section><!-- //More info -->
+
+
+    <!-- Popup on mobile -->
+    <div class="modal-container">
+      <div class="modal">
+        <div class="close-button"></div>
+        <div class="store-btn">
+          <a link="#"><img src="images/btn-adrd.png" width="280px"></a>
+        </div>
+    </div>
+    <!-- end -->
     
 
   </div><!-- //preloader -->
-  
+
+
+
+    
+
+
+      
    
-  <!-- JavaScript plugins comes here -->  
+   <!-- JavaScript plugins comes here -->  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>        <!-- jQuery -->
     <script src="js/jquery.easing.min.js"></script>       <!-- jQuery easing -->    
     <script src="js/jquery.scrollTo.js"></script>         <!-- Scroll to -->
     <script src="js/jquery.maximage.min.js"></script>     <!-- MaxImage background image slideshow -->
     <script src="js/classie.js"></script>                 <!-- Class helper function -->
-  <script src="js/pathLoader.js"></script>              <!-- Preloader Loading Animation -->
-  <script src="js/preloader.js"></script>               <!-- Preloader -->
+    <script src="js/pathLoader.js"></script>              <!-- Preloader Loading Animation -->
+    <script src="js/preloader.js"></script>               <!-- Preloader -->
     <script src="js/retina.js"></script>                  <!-- Retina.js - support for HiDPI Displays -->
     <script src="js/waypoints.min.js"></script>           <!-- Waypoints -->
     <script src="js/nivo-lightbox.min.js"></script>       <!-- Lightbox/Modalbox -->
     <script src="js/jquery.fitvids.js"></script>          <!-- Responsive Video -->
     <script src="js/owl.carousel.js"></script>          <!-- Owl Carousel --> 
     <script src="js/main.js"></script>                    <!-- Main Js file -->
+
     
-    
+    <!-- popup on mobile -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('body').click(function () {
+          openModal();
+        });
+        
+        $('.close-button').click(function () {
+          closeModal();
+        });
+        
+      });
+
+      function openModal() {
+        $('html').addClass('modal-open');
+      }
+
+      function closeModal() {
+        $('html').removeClass('modal-open');
+      }
+    </script>
+
     <!-- MOBILE NAVIGATION -->
     <script>
     function goToURL() {
@@ -319,4 +358,3 @@
       
   </script>
   </body>
-</html>
